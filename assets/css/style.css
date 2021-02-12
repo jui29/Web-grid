@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Loyout-grid > * {
+    border: 1px solid black;
+	background-color:gray;
+    border:2px solid blue;
+}
+.Loyout-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.Loyout-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 170px;
+    grid-template-areas:
+    
+    "small-item1 small-item1 small-item2 small-item3   small-item4 small-item5 small-item5"
+    "small-item6 small-item6 small-item7 small-item7   small-item8 small-item9 small-item10"
+    "small-item6 small-item6 small-item11 small-item12 small-item8 small-item13 small-item14"
+    
+    ;
+}
+.small-item1{
+    grid-area: small-item1;
+}
+.small-item2{
+    grid-area: small-item2;
+}
+.small-item3{
+    grid-area: small-item3;
+}
+.small-item4{
+    grid-area: small-item4;
+}
+.small-item5{
+    grid-area:small-item5;
+}
+.small-item6{
+    grid-area:small-item6; 
+}
+.small-item7{
+    grid-area: small-item7;
+}
+.small-item8{
+    grid-area: small-item8;
+}
+.small-item9{
+    grid-area: small-item9;
+}
+.small-item10{
+    grid-area: small-item10;
+}
+.small-item11{
+    grid-area: small-item11;
+}
+.small-item12{
+    grid-area: small-item12;
+}
+.small-item13{
+    grid-area: small-item13;
+}
+.small-item14{
+    grid-area: small-item14;
+}
+
+
+
+@media screen and (min-width:200px) and (max-width:800px){
+    .Loyout-grid{
+        display: block;
+        width: 100%;
+    }
+}
